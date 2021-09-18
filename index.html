@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="short icon" href="pizza-one.png" type="image/png">
+</head>
+
+<body>
+    <center>
+        <h1>Perfect Pizza</h1>
+        <div class="containerBox hidden">
+            <span class="message">Message</span>
+            <br>
+            <button class="close" on type="button">&times;</button>
+
+        </div>
+
+        <div class="contain Shopping">
+            <h2>Pizza Shopping Cart</h2>
+            <table class="cardTable">
+                <tr>
+                    <td class="item">
+                        <h3 class="item">Small Pizza</h3>
+                    </td>
+    
+                    <td><button class="pBtn small"  data-size ="smallAdd" on type="button">+</button></td>
+    
+                    <td>
+                        <h3 class="smallPizzaQty item">0</h3>
+                    </td>
+    
+                    <td><button class="mBtn small" data-size="smallMin" on type="button">-</button></td>
+                   
+                    <td>
+                        <h3 class="item">R<span class="smallPizzaTotal">0.00</span>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td class="item">
+                        <h3 class="item">Medium Pizza</h3>
+                    </td>
+    
+                    <td><button class="pBtn med" data-size="medAdd" on type="button">+</button></td>
+    
+                    <td>
+                        <h3 class="medPizzaQty item">0</h3>
+                    </td>
+    
+                    <td><button class="mBtn med" data-size="medMin" on type="button">-</button></td>
+                         
+            
+                    <td>
+                        <h3 class="item">R<span class="medPizzaTotal">0.00</span>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <h3 class="item">Large Pizza</h3>
+                    </td>
+    
+                    <td><button class="pBtn large" data-size="largeAdd" on type="button">+</button></td>
+    
+                    <td>
+                        <h3 class="largePizzaQty item">0</h3>
+                    </td>
+    
+                    <td><button class="mBtn large" data-size="largeMin" on type="button">-</button></td>
+                   
+                    <td>
+                        <h3 class="item">R<span class="largePizzaTotal">0.00</span>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="4">
+                        <h3 class="item">Total Cost</h3>
+                    </td>
+                
+                    <td>
+                        <h3 class="item">R<span class="cartTotal">0.00</span></h3>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="5">
+                        <button class="checkOut hidden" on type="button" name="checkOut">Check out</button>
+                    </td>
+                </tr>
+    
+            </table>
+
+            <div class="payOut hidden">
+                <table class="cartTable">
+                    <tr>
+                        <td>
+                            <h3>Payment Amount:</h3>
+                        </td>
+                        <td class="pAmt">R<input class="payAmt" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="payBtn" on type="button" name="pay">Pay</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+        </div>
+          
+        <div class="pizzas" >
+            <div class="pizza small_pizza">
+                <h2>Small Pizza</h2>
+                <div class="pizza_img">
+                <img src="pizza3.png" width="100">
+            </div>
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R32.00</h3>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h5>This pizza is small but nice, it contain the following flavours BBQ Chicken,
+                                 Pepperoni, Buffalo, Veggie etc.</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn small buy" data-size="smallAdd" on type="button">Buy</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="pizza medium_pizza">
+            <h2>Medium Pizza</h2>
+            <div class="pizza_img">
+                <img src="pizza3.png" width="125">
+
+            </div>
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R56.00</h3>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h5>This pizza is full of flavours that you will never forget like BBQ Chicken,
+                                Pepperoni, Buffalo, Veggie etc.</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn med buy" data-size="medAdd" on type="button">Buy</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="pizza large_pizza">
+            <h2>Large Pizza</h2>
+            <div class="pizza_img">
+                <img src="pizza3.png" width="150">
+
+            </div>
+            <table class="pizza_top">
+                <tr>
+                    <td colspan="2">
+                        <h3>R68.00</h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h5>Buy me and enjoy the following flavours that you will never forget like BBQ Chicken, Pepperoni, Buffalo,
+                                Veggie etc.</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pBtn large buy" data-size="largeAdd" on type="button">Buy</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    </div>
+        
+    </div> 
+    </center>
+
+    <div class="pizza contact_us" >
+        <center><h2>Contact details</h2></center> 
+        <center><h3>Contact us at: 0631107118 or tebogo.hati@gmail.com</h3></center>
+
+    </div>
+
+    <script src="cart.js" charset="utf-8"></script>
+    <script src="js/carts.js" charset="utf-8"></script>
+    <script src="js/factoryFunction.js" charset="utf-8"></script>
+
+</body>
+
+</html>
